@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="header">Learn to code by watching others</div>
+            <div class="footer">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </div>
+        </div>
+        <div class="right-side">
+            <div class="head"><div class="inside-header"><span class="head-in">Try it free 7 days</span>&nbsp;then $20/mo. thereafter</div></div>
+                <form id="signup-form">
+                        <div class="firstName">
+                            <input type="text" name="firstName" class="inputField" id="firstName" placeholder="First Name" maxlength="15" >
+                            <div class="errors" id="firstNameError"></div>
+                        </div>
+                        <div class="lastName">
+                            <input type="text" name="lastName" class="inputField" id="lastName" placeholder="Last Name" maxlength="20">
+                            <div class="errors" id="lastNameError"></div>
+                        </div>
+                        <div class="email">
+                            <input type="email" name="email" class="inputField" id="email" placeholder="Email Address" >
+                            <div class="errors" id="emailError"></div>
+                        </div>
+                        <div class="password">
+                            <input type="password" name="password" class="inputField" id="password" placeholder="Password" minlength="6">
+                            <div class="errors" id="passwordError"></div>
+                        </div>
+                    <button class="btn" type="submit">CLAIM YOUR FREE TRIAL</button>
+                    <div class="foot">By clicking the button, you are agreeing to our <span class="foot-in">Terms and Services</span></div>
+
+                </form>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
