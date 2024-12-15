@@ -11,26 +11,16 @@ const form = document.getElementById(`signup-form`);
 
 function adjustFormHeight() {
     const errors = document.querySelectorAll('.errors');
-    let hasErrors = false;
-
-    // Check for errors and dynamically update error visibility
-    errors.forEach(error => {
-        if (error.textContent !== "") {
-            hasErrors = true;
-            error.classList.add("active"); // Show error
-        } else {
-            error.classList.remove("active"); // Hide error
-        }
-    });
-
     let totalHeight = 474;
 
     errors.forEach(error => {
         if (error.textContent !== "") {
             totalHeight += 20;
+            error.classList.add("active");
+        } else {
+            error.classList.remove("active");
         }
     });
-
     form.style.height = `${totalHeight}px`;
 }
 
