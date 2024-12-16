@@ -6,10 +6,10 @@
 }
 
 .container {
+  background-image: url(./bg.png);
   padding: 1%;
   height: 100vh;
   width: 100vw;
-  background-color: #ff7979;
   display: flex;
   justify-content: center;
   align-items: center;
