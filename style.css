@@ -79,7 +79,7 @@
 }
 
 .inputField {
-  padding-right: 50px;
+  padding-right: 55px;
   padding-left: 5%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -217,6 +217,7 @@
     height: 442px;
   }
   .inputField {
+    padding-right: 45px;
     width: 279px;
   }
   .btn {
